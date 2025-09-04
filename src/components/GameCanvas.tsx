@@ -17,10 +17,6 @@ export default function GameCanvas() {
     };
 
     gameRef.current = new Phaser.Game(config);
-
-    return () => {
-      gameRef.current?.destroy(true);
-    };
   }, []);
 
   return <div id="game-container" />;
